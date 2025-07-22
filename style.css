@@ -82,12 +82,12 @@ section {
   color: #C41230;
   font-weight: bold;
   cursor: pointer;
-  text-decoration: underline dashed; /* optional: helps indicate it's interactive */
+  text-decoration: underline dashed;
 }
 
 .hover-image {
   position: absolute;
-  top: -140px; /* adjust as needed */
+  top: -140px;
   left: 50%;
   transform: translateX(-50%) scale(0.95);
   width: 200px;
