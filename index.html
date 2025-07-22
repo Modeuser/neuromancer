@@ -68,6 +68,25 @@
   <!-- c&p above temp in future -->
 
   <div class="project">
+    <div class="slideshow-container">
+      <img id="project3-slideshow" class="project-img" src="assets/project_3/1.jpg" alt="Project 3 slideshow image" />
+    </div>
+    <div class="project-info">
+      <h3>4-way split projection arcade game Jamo-O-Drum</h3>
+      <p>
+        Building Virtual World Project
+      </p>
+      <p>
+        A "hackathon" style project where 2 artists, 2 programmers, and 1 sound designer create a game in 10 days.
+        We made a AR "hide and seek" game on a novel arcade platform in collaboration of CMU ECE students.
+        My role was mainly programming the game logic to utilize the unique perspectives enabled via the high refresh rate
+        LCD glasses that's synchronized with the projector.
+      </p>
+      <a href="https://youtu.be/E3Oefg1OAeE">YouTube video explaining the game and machine</a>
+    </div>
+  </div>
+
+  <div class="project">
     <img src="assets/project_2/1.png" alt="Screenshot of Project 2" class="project-img-static" />
     <div class="project-info">
       <h3>MATLAB gambling game + data analysis</h3>
@@ -126,6 +145,7 @@
 
     document.addEventListener("DOMContentLoaded", () => {
       createSlideshow("project1-slideshow", "assets/project_1/", 3);
+      createSlideshow("project3-slideshow", "assets/project_3/", 4);
       // createSlideshow("project2-slideshow", "assets/project_2/", 5);
     });
   </script>
