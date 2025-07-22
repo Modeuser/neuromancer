@@ -2,37 +2,52 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Your Name - Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="profile">
-    <img src="assets/profile.jpg" alt="Profile Picture" class="profile-pic" />
-    <div class="profile-info">
-      <h1>Your Name</h1>
-      <p class="role">Aspiring Software Engineer</p>
-      <p class="education">Carnegie Mellon University, B.S. in Computer Science</p>
-      <p class="contact">📧 your.email@example.com | 🔗 <a href="https://github.com/yourusername" target="_blank">GitHub</a></p>
-    </div>
+  <header>
+    <img src="assets/profile.jpg" alt="Your Name" class="profile-img" />
+    <h1>Your Name</h1>
+    <p class="subtitle">Your role — e.g., CS Student, Developer, Designer</p>
+    <nav>
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
-  <main>
-    <h2 class="section-title">Projects</h2>
-    <div class="projects">
-
-      <div class="project">
-        <img src="assets/project1.jpg" alt="Project 1" />
-        <a href="https://github.com/yourusername/project1" target="_blank">Project 1 Title</a>
-      </div>
-
-      <div class="project">
-        <img src="assets/project2.jpg" alt="Project 2" />
-        <a href="https://github.com/yourusername/project2" target="_blank">Project 2 Title</a>
-      </div>
-
-      <!-- Add more project blocks here -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Project Title</h3>
+      <p>Short description of what the project does or why it’s cool.</p>
+      <a href="https://github.com/yourusername/project">GitHub Repo</a>
     </div>
-  </main>
+    <!-- Add more projects here -->
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      A short paragraph about you — what you study, what you enjoy building,
+      what you're looking for, etc.
+    </p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Feel free to reach out:</p>
+    <ul>
+      <li>Email: your@email.com</li>
+      <li>GitHub: <a href="https://github.com/yourusername">yourusername</a></li>
+      <li>LinkedIn: <a href="https://linkedin.com/in/yourusername">yourusername</a></li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Your Name</p>
+  </footer>
 </body>
 </html>
