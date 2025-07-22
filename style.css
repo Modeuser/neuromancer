@@ -79,6 +79,10 @@ section {
 .hover-image-trigger {
   position: relative;
   display: inline-block;
+  color: #C41230;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: underline dashed; /* optional: helps indicate it's interactive */
 }
 
 .hover-image {
