@@ -58,17 +58,25 @@
 <section id="projects">
   <h2>Projects</h2>
   <div class="project">
-    <div class="slideshow-container">
-      <img id="project2-slideshow" class="project-img" src="assets/project_2/1.jpg" alt="Project 2 slideshow image" />
-    </div>
+    <img src="assets/project1.jpg" alt="Screenshot of Project 1" class="project-img" />
     <div class="project-info">
       <h3>Project Title</h3>
       <p>Cool stuff</p>
-      <a href="https://github.com/Modeuser">GitHub Repo</a>
+      <a href="https://github.com/Modeuser">A link to something</a>
     </div>
   </div>
   <!-- c&p above temp in future -->
-   <div class="project">
+
+  <div class="project">
+    <img src="assets/project_2/1.png" alt="Screenshot of Project 2" class="project-img" />
+    <div class="project-info">
+      <h3>MATLAB gambling game + data analysis</h3>
+      <p>A matlab script that runs through a complete experimental paradigm, then performs a paired t-test between the groups</p>
+      <a href="https://github.com/Modeuser/Gamble-psychology-game">GitHub Repo</a>
+    </div>
+  </div>
+
+  <div class="project">
     <div class="slideshow-container">
       <img id="project1-slideshow" class="project-img" src="assets/project_1/1.jpg" alt="Project 1 slideshow image" />
     </div>
@@ -117,8 +125,8 @@
     }
 
     document.addEventListener("DOMContentLoaded", () => {
-      createSlideshow("project1-slideshow", "assets/project_1/", 5);
-      createSlideshow("project2-slideshow", "assets/project_2/", 3);
+      createSlideshow("project1-slideshow", "assets/project_1/", 3);
+      // createSlideshow("project2-slideshow", "assets/project_2/", 5);
     });
   </script>
 
