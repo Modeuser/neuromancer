@@ -76,6 +76,28 @@ section {
   text-decoration: underline;
 }
 
+.hover-image-trigger {
+  position: relative;
+  display: inline-block;
+}
+
+.hover-image {
+  position: absolute;
+  top: -140px; /* adjust as needed */
+  left: 50%;
+  transform: translateX(-50%) scale(0.95);
+  width: 200px;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+  border-radius: 12px;
+  pointer-events: none;
+  z-index: 100;
+}
+
+.hover-image-trigger:hover .hover-image {
+  opacity: 1;
+  transform: translateX(-50%) scale(1);
+}
 
 footer {
   text-align: center;
