@@ -79,10 +79,18 @@ section {
 .hover-image-trigger {
   position: relative;
   display: inline-block;
-  color: #C41230;
   font-weight: bold;
   cursor: pointer;
   text-decoration: underline dashed;
+}
+
+/* colors for different stuff, add as needed */
+.color-cmu {
+  color: #C41230;
+}
+
+.color-uoft {
+  color: #1E3765;
 }
 
 .hover-image {
@@ -102,6 +110,7 @@ section {
   opacity: 1;
   transform: translateX(-50%) scale(1);
 }
+
 
 footer {
   text-align: center;
