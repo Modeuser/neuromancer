@@ -107,29 +107,18 @@
       let current = 1;
 
       setInterval(() => {
-        // fade out
         img.style.opacity = 0;
-
-        // wait for fade-out to complete
         setTimeout(() => {
           current = (current % imageCount) + 1;
-
-          // create a temp image to preload
-          const tempImg = new Image();
-          tempImg.src = `${imagePath}${current}.jpg`;
-
-          tempImg.onload = () => {
-            img.src = tempImg.src;
-            img.style.opacity = 1; // fade in only after image loads
-          };
-        }, 500); // matches fade duration
-      }, 5000); // 5 sec
+          img.src = `${imagePath}${current}.jpg`;
+          img.style.opacity = 1;
+        }, 1000);
+      }, 5000);
     }
 
     document.addEventListener("DOMContentLoaded", () => {
       createSlideshow("project1-slideshow", "assets/project1/", 5);
       createSlideshow("project2-slideshow", "assets/project2/", 3);
-      // blah blah
     });
   </script>
 
