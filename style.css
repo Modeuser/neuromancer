@@ -17,8 +17,8 @@ a {
   display: flex;
   justify-content: space-between;
   padding: 1rem 2rem;
-  position: sticky;
-  top: 0;
+  max-width: 960px;
+  margin: auto;
 }
 
 .nav-left {
@@ -30,11 +30,14 @@ a {
   margin-left: 1.5rem;
 }
 
-.intro-section {
+main.intro-section {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
   padding: 3rem 2rem;
+  max-width: 960px;
+  margin: auto;
   background: #fff;
 }
 
@@ -43,11 +46,14 @@ a {
   height: 250px;
   object-fit: cover;
   border-radius: 8px;
-  margin-right: 2rem;
+  margin: 1rem;
 }
 
 .intro-text {
-  max-width: 600px;
+  flex: 1;
+  min-width: 280px;
+  max-width: 500px;
+  margin: 1rem;
 }
 
 .intro-text h1 {
@@ -78,7 +84,13 @@ a {
 
 .section {
   padding: 2rem;
-  background: #f0f2f8;
+  max-width: 960px;
+  margin: auto;
+}
+
+.section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
 .project {
