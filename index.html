@@ -59,7 +59,7 @@
   <h2>Projects</h2>
   <div class="project">
     <div class="slideshow-container">
-      <img id="project1-slideshow" class="project-img" src="assets/project_1_img/1.jpg" alt="Project 1 slideshow image" />
+      <img id="project2-slideshow" class="project-img" src="assets/project_2/1.jpg" alt="Project 2 slideshow image" />
     </div>
     <div class="project-info">
       <h3>Project Title</h3>
@@ -70,7 +70,7 @@
   <!-- c&p above temp in future -->
    <div class="project">
     <div class="slideshow-container">
-      <img id="project1-slideshow" class="project-img" src="assets/.jpg" alt="Project 1 slideshow image" />
+      <img id="project1-slideshow" class="project-img" src="assets/project_1/1.jpg" alt="Project 1 slideshow image" />
     </div>
     <div class="project-info">
       <h3>Custom split keyboard</h3>
@@ -102,23 +102,25 @@
     <p>&copy; 2025 Brian He</p>
   </footer>
   <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const slideshow = document.getElementById("project1-slideshow");
-      const totalSlides = 3;
-      const imagePrefix = "assets/project_1_img/";
-      const extension = ".jpg";
+    function createSlideshow(id, imagePath, imageCount) {
+      const img = document.getElementById(id);
       let current = 1;
 
       setInterval(() => {
-        slideshow.style.opacity = 0;
-
+        img.style.opacity = 0;
         setTimeout(() => {
-          current = (current % totalSlides) + 1;
-          slideshow.src = `${imagePrefix}${current}${extension}`;
-          slideshow.style.opacity = 1;
-        }, 500); //matches fade duration
-      }, 5000); //5 seconds
+          current = (current % imageCount) + 1;
+          img.src = `${imagePath}${current}.jpg`;
+          img.style.opacity = 1;
+        }, 500);
+      }, 5000);
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      createSlideshow("project1-slideshow", "assets/project_1/", 3);
+      createSlideshow("project2-slideshow", "assets/project_2/", 5);
     });
   </script>
+
 </body>
 </html>
