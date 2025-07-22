@@ -55,11 +55,12 @@
   </p>
 </section>
 
-
 <section id="projects">
   <h2>Projects</h2>
   <div class="project">
-    <img src="assets/project1.jpg" alt="Screenshot of Project 1" class="project-img" />
+    <div class="slideshow-container">
+      <img id="project1-slideshow" class="project-img" src="assets/.jpg" alt="Project 1 slideshow image" />
+    </div>
     <div class="project-info">
       <h3>Project Title</h3>
       <p>Cool stuff</p>
@@ -77,7 +78,8 @@
       </p>
       <p>
         I flashed a custom firmware written in C that would make the rotary encoder on the PCB run different
-        macros when different modifier keys are held (e.g. rotating counter clockwise while holding ctrl is undo, shift vice-versa).
+        macros when different modifier keys are held (e.g. when holding ctrl, spinning it counter-clock-wise
+        is undo (ctrl+z), spinning it clock-wise is redo (ctrl+shift+z))
       </p>
       <a href="https://www.facebook.com/share/v/1GH5wKyHBB/">Details</a>
     </div>
@@ -97,5 +99,24 @@
   <footer>
     <p>&copy; 2025 Brian He</p>
   </footer>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const slideshow = document.getElementById("project1-slideshow");
+      const totalSlides = 7;
+      const imagePrefix = "assets/";
+      const extension = ".jpg";
+      let current = 1;
+
+      setInterval(() => {
+        slideshow.style.opacity = 0;
+
+        setTimeout(() => {
+          current = (current % totalSlides) + 1;
+          slideshow.src = `${imagePrefix}${current}${extension}`;
+          slideshow.style.opacity = 1;
+        }, 500); //matches fade duration
+      }, 5000); //5 seconds
+    });
+  </script>
 </body>
 </html>
