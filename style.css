@@ -9,7 +9,7 @@ body {
 
 header {
   text-align: center;
-  background: #333;
+  background: #1E3765;
   color: #fff;
   padding: 2rem 1rem;
 }
@@ -43,8 +43,39 @@ section {
 }
 
 .project {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  background: #444;
+  padding: 1rem;
+  border-radius: 8px;
   margin-bottom: 1rem;
+  flex-wrap: wrap;
 }
+
+.project-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 12px;
+  object-fit: cover;
+  flex-shrink: 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.project-info {
+  flex: 1;
+  min-width: 200px;
+}
+
+.project-info h3 {
+  margin-top: 0;
+}
+
+.project-info a {
+  color: #6EC1E4;
+  text-decoration: underline;
+}
+
 
 footer {
   text-align: center;
