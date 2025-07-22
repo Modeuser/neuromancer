@@ -73,6 +73,15 @@ section {
   display: block;
 }
 
+.project-img-static {
+  width: 200px;
+  height: 180px;
+  border-radius: 12px;
+  object-fit: cover;
+  flex-shrink: 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
 .project-info {
   flex: 1;
   min-width: 200px;
