@@ -1,1 +1,1 @@
-[Link Text](https://brianhe.us)
+[Personal Website](https://brianhe.us)
