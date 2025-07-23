@@ -3,7 +3,9 @@ body {
   line-height: 1.6;
   margin: 0;
   padding: 0;
-  background: linear-gradient(to bottom, #1E3765, #C41230);
+  background: linear-gradient(45deg,
+      #1E3765 0%,
+      #C41230 70%);
   color: #fff;
 }
 
@@ -15,9 +17,7 @@ header {
   text-align: center;
   color: #fff;
   padding: 2rem 1rem;
-  background: linear-gradient(45deg,
-      #1E3765 0%,
-      #C41230 100%);
+  background: transparent;
 }
 
 .profile-img {
