@@ -15,7 +15,9 @@ header {
   text-align: center;
   color: #fff;
   padding: 2rem 1rem;
-  background: transparent;
+  background: linear-gradient(45deg,
+      #1E3765 0%,
+      #C41230 100%);
 }
 
 .profile-img {
