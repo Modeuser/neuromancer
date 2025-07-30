@@ -79,21 +79,30 @@
   </div>
 
   <div class="project">
-    <iframe
-      src="https://www.youtube.com/embed/9_q5n1AFspk?si=QjYfQDo9uublRUcV"
-      title="YouTube video player" frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-    </iframe>
+    <div class="slideshow-container">
+      <img id="project6-slideshow" class="project-img" src="assets/project_6/1.jpg" alt="Project 6 slideshow image" />
+    </div>
     <div class="project-info">
       <h3>NeuExplore</h3>
       <p>
         Awarded $4000 from the School of Computer Science at CMU as part of the CS+X program.
       </p>
       <p>
-        Tied for 6th Place at the University of Toronto Start-up Competition
+        Tied for 6th (out of 77) place at the University of Toronto Start-up Competition
       </p>
-      <a href="https://youtube.com/shorts/8F9ocFpnycI?feature=share">Hitting department directors in the head</a>
+      <p>
+        Problem: Information in neuroscience research is often communicated using 2D images,
+        despite the fact that the brain being an extremely dense, 3D structure.
+      </p>
+      <p>
+        Solution: Create a intuitive platform that leverages the 3-dimensional nature of VR
+        interactions to allow researchers to visualize their findings in 3D VR.
+      </p>
+      <p>
+        Originally a personal project, gained traction after graduating from the University of Toronto.
+        I am the lead programmer and tech-artist for this project.
+      </p>
+      <a href="https://youtu.be/PzjnXI5PXpw">30 second demo, showing 3 key features</a>
     </div>
   </div>
 
@@ -198,10 +207,12 @@
       }, 5000);
     }
 
+    // c&p a new line for each new slideshow
     document.addEventListener("DOMContentLoaded", () => {
       createSlideshow("project1-slideshow", "assets/project_1/", 3);
       createSlideshow("project3-slideshow", "assets/project_3/", 4);
       createSlideshow("project4-slideshow", "assets/project_4/", 6);
+      createSlideshow("project6-slideshow", "assets/project_6/", 3);
       // createSlideshow("project2-slideshow", "assets/project_2/", 5);
     });
     document.addEventListener('DOMContentLoaded', function () {
